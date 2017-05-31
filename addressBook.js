@@ -46,9 +46,11 @@ var search = function(name) {
     if(contacts[prop].firstName === name) {
       console.log(contacts[prop]);
       return contacts[prop];
+    } else {
+      alert("Sorry, contact not found. Please add to directory.");
     }
   }
 };
 
-list(contacts);
-search("Thomas");
+// list(contacts);
+search("chris");
